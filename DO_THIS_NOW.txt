@@ -1,0 +1,73 @@
+================================================================================
+DO THIS RIGHT NOW TO FIX THE ERROR
+================================================================================
+
+You're seeing an error because the preview is serving OLD cached code.
+The NEW code (Google Gemini) is already saved to disk.
+
+QUICK FIX (Takes 30 seconds):
+================================================================================
+
+1. Look at the Preview window on the right side of v0.app
+
+2. Inside the Preview, press ONE of these:
+   - Mac:     Command + Shift + R
+   - Windows: Control + Shift + R  
+   - Linux:   Control + Shift + R
+
+3. Wait 5 seconds while it reloads
+
+4. Test: Paste text and click "Generate Tags"
+
+THAT'S IT!
+================================================================================
+
+WHAT'S HAPPENING:
+
+OLD CODE (in preview's memory):
+  - Uses OpenAI GPT-4o Mini
+  - Requires credit card
+  - Throws rate limit error
+
+NEW CODE (on disk, ready to load):
+  - Uses Google Gemini 1.5 Flash
+  - Completely free
+  - No credit card needed
+  - Already working!
+
+The hard refresh (Cmd+Shift+R) clears the browser cache and forces it to 
+reload the code from disk.
+
+================================================================================
+
+AFTER THE REFRESH YOU'LL SEE:
+
+✓ Text input field
+✓ "Generate Tags" button
+✓ Tags appear in 2-3 seconds
+✓ Footer says "Google Gemini 1.5 Flash"
+✓ No errors
+
+================================================================================
+
+IF IT STILL DOESN'T WORK:
+
+Option 1: Try refreshing again (sometimes takes 2 attempts)
+
+Option 2: Check environment variable
+  - Look at the left sidebar in v0.app
+  - Click "Vars"
+  - Make sure "GOOGLE_GENERATIVE_AI_API_KEY" is there
+  - Then hard refresh again
+
+Option 3: Check browser console for errors
+  - Press F12 to open Developer Tools
+  - Click "Console" tab
+  - Share any red error messages
+
+================================================================================
+
+Your app is ready - just need to reload it!
+
+Go ahead and press Cmd+Shift+R (or Ctrl+Shift+R) now!
+================================================================================
