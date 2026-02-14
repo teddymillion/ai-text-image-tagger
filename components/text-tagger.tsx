@@ -228,7 +228,7 @@ export function TextTagger() {
         {/* Footer Info */}
         <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>
-            Powered by OpenAI GPT-4 Mini • Max 5000 characters per request
+            Powered by Google Gemini 1.5 Flash • Max 5000 characters per request • Free to use
           </p>
         </div>
       </div>

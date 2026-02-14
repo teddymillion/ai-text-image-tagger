@@ -9,6 +9,20 @@ const TagsSchema = z.object({
     .describe('Confidence score from 0-1 indicating how confident the tagging is'),
 })
 
+/**
+ * POST /api/tag-text
+ * 
+ * Generates relevant topic tags for the provided text using Google Gemini.
+ * 
+ * Request body:
+ *   - text: string (required, 1-5000 characters)
+ * 
+ * Response:
+ *   - success: boolean
+ *   - tags: string[] (3-7 tags)
+ *   - confidence: number (0-1 scale)
+ *   - textLength: number
+ */
 export async function POST(req: Request) {
   try {
     // Parse the incoming request
@@ -34,14 +48,16 @@ export async function POST(req: Request) {
       )
     }
 
-    // Call OpenAI via AI SDK to generate tags
+    // Call Google Gemini via AI SDK to generate tags
+    // Using google/gemini-1.5-flash for free tier or google/gemini-1.5-pro for better quality
     const result = await generateText({
-      model: 'openai/gpt-4o-mini',
+      model: 'google/gemini-1.5-flash',
       system: `You are an expert at analyzing text and generating relevant topic tags. 
 Generate 3-7 concise, relevant tags that capture the main topics and themes in the provided text. 
 Tags should be lowercase, single words or short phrases (max 2 words each).
-Return tags that are specific and descriptive of the content.`,
-      prompt: `Analyze the following text and provide relevant topic tags:\n\n${text}`,
+Return tags that are specific and descriptive of the content.
+Always provide a confidence score from 0 to 1 based on how well the tags represent the content.`,
+      prompt: `Analyze the following text and provide relevant topic tags in JSON format with "tags" (array of strings) and "confidence" (number 0-1) fields:\n\n${text}`,
       output: Output.object({ schema: TagsSchema }),
     })
 
@@ -54,6 +70,7 @@ Return tags that are specific and descriptive of the content.`,
       tags: taggedData.tags,
       confidence: taggedData.confidence,
       textLength: text.length,
+      model: 'google-gemini-1.5-flash',
     })
   } catch (error) {
     // Handle specific error types
@@ -67,13 +84,23 @@ Return tags that are specific and descriptive of the content.`,
     // Log error for debugging
     console.error('Error in /api/tag-text:', error)
 
-    // Return generic error response
+    // Return generic error response with details
+    const errorMessage =
+      error instanceof Error ? error.message : 'An error occurred while processing your request'
+
+    // Check for common API errors
+    if (errorMessage.includes('API key')) {
+      return Response.json(
+        {
+          error: 'API configuration error. Please ensure GOOGLE_GENERATIVE_AI_API_KEY is set.',
+        },
+        { status: 500 }
+      )
+    }
+
     return Response.json(
       {
-        error:
-          error instanceof Error
-            ? error.message
-            : 'An error occurred while processing your request',
+        error: errorMessage,
       },
       { status: 500 }
     )

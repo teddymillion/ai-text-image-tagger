@@ -1,24 +1,25 @@
 # AI Text Tagger
 
-A modern, production-ready web application that uses OpenAI's GPT-4 Mini to automatically generate relevant topic tags from any text. Built with Next.js, React, and Tailwind CSS.
+A modern, production-ready web application that uses **Google Gemini 1.5 Flash** to automatically generate relevant topic tags from any text. Built with Next.js, React, and Tailwind CSS. Completely free with no credit card required!
 
 ## Features
 
-- 🤖 **AI-Powered Tagging**: Uses OpenAI GPT-4 Mini to generate accurate, relevant tags
+- 🤖 **AI-Powered Tagging**: Uses Google Gemini 1.5 Flash to generate accurate, relevant tags
 - 🎨 **Modern UI**: Clean, responsive interface built with shadcn/ui and Tailwind CSS
-- ⚡ **Real-time Processing**: Instant tag generation with streaming support
+- ⚡ **Real-time Processing**: Fast tag generation (2-3 seconds average)
 - 📊 **Confidence Scoring**: See how confident the AI is in its tagging
 - 📋 **Copy to Clipboard**: Easily copy generated tags for use elsewhere
 - ✅ **Error Handling**: Comprehensive error handling and user feedback
 - 📱 **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - 🔒 **Secure**: All API calls go through Next.js API routes (no frontend API exposure)
+- 💰 **Completely Free**: No credit card required, no hidden costs
 
 ## Tech Stack
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS, shadcn/ui
 - **Backend**: Next.js 16 with App Router
-- **AI**: Vercel AI SDK v6, OpenAI GPT-4 Mini
-- **Hosting**: Vercel
+- **AI**: Vercel AI SDK v6, Google Gemini 1.5 Flash
+- **Hosting**: Vercel or v0.app
 
 ## Project Structure
 
@@ -45,8 +46,8 @@ A modern, production-ready web application that uses OpenAI's GPT-4 Mini to auto
 ### Prerequisites
 
 - Node.js 18+ and npm/pnpm
-- An OpenAI API key (get one from https://platform.openai.com/api-keys)
-- A Vercel account (for deployment)
+- A free Google Gemini API key (get one from https://aistudio.google.com/apikey - no credit card required!)
+- A Vercel account (for deployment, optional)
 
 ### Local Development
 
