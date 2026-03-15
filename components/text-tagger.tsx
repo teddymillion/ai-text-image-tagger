@@ -3,9 +3,9 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Loader2, Zap } from 'lucide-react'
 import { useToast } from '@/hooks/use-toast'
+import { TagsDisplay } from './tags-display'
 
 interface TagResponse {
   success: boolean
@@ -169,57 +169,9 @@ export function TextTagger() {
             </div>
 
             {/* Tags Display */}
-            {tags.length > 0 && (
-              <div className="space-y-4 pt-6 border-t">
-                <div>
-                  <h3 className="text-sm font-semibold mb-3">Generated Tags</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {tags.map((tag, index) => (
-                      <Badge
-                        key={index}
-                        variant="secondary"
-                        className="text-sm py-1.5 px-3 cursor-default hover:bg-secondary"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Confidence Score */}
-                {confidence !== null && (
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-semibold">Confidence Score</h3>
-                    <div className="flex items-center gap-3">
-                      <div className="flex-1 bg-secondary rounded-full h-2">
-                        <div
-                          className="bg-primary h-full rounded-full transition-all"
-                          style={{ width: `${confidence * 100}%` }}
-                        />
-                      </div>
-                      <span className="text-sm font-medium text-muted-foreground">
-                        {(confidence * 100).toFixed(0)}%
-                      </span>
-                    </div>
-                  </div>
-                )}
-
-                {/* Copy Tags Button */}
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => {
-                    const tagsText = tags.join(', ')
-                    navigator.clipboard.writeText(tagsText)
-                    toast({
-                      title: 'Copied',
-                      description: 'Tags copied to clipboard',
-                    })
-                  }}
-                  className="w-full"
-                >
-                  Copy Tags
-                </Button>
+            {(tags.length > 0 || isLoading) && (
+              <div className="pt-6 border-t">
+                <TagsDisplay tags={tags} confidence={confidence} isLoading={isLoading} />
               </div>
             )}
           </CardContent>
@@ -228,7 +180,7 @@ export function TextTagger() {
         {/* Footer Info */}
         <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>
-            Powered by Google Gemini 2.5 Flash • Max 5000 characters per request • Free to use
+            Powered by Google Gemini • Max 5000 characters per request • Free to use
           </p>
         </div>
       </div>
