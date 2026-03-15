@@ -228,7 +228,7 @@ export function TextTagger() {
         {/* Footer Info */}
         <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>
-            Powered by Google Gemini 1.5 Flash • Max 5000 characters per request • Free to use
+            Powered by Google Gemini 2.5 Flash • Max 5000 characters per request • Free to use
           </p>
         </div>
       </div>

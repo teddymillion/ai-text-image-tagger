@@ -7,7 +7,7 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GENERATIVE_AI_API_KEY ||
  * POST /api/tag-text
  *
  * Generates relevant topic tags for the provided text using Google Gemini.
- * Uses the Gemini 1.5 Flash model for fast, free processing (no credit card required).
+ * Uses the Gemini 2.5 Flash model for fast, free processing (no credit card required).
  *
  * Request body:
  *   - text: string (required, 1-5000 characters)
@@ -56,7 +56,7 @@ export async function POST(req: Request) {
     }
 
     // Get the Gemini model (using free tier model)
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
     // Create the prompt for tag generation
     const prompt = `You are an expert at analyzing text and generating relevant topic tags.
@@ -123,7 +123,7 @@ Return a JSON object with exactly this format (no markdown code blocks):
       tags: parsedResponse.tags,
       confidence: confidence,
       textLength: text.length,
-      model: 'gemini-1.5-flash',
+      model: 'gemini-2.5-flash',
     })
   } catch (error) {
     // Handle specific error types
