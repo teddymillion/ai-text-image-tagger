@@ -1,6 +1,6 @@
 # 🚀 START HERE - AI Text Tagger
 
-Welcome! You have a **complete, production-ready AI Text Tagger application** ready to deploy on v0.app/Vercel.
+Welcome! You have a **complete, production-ready AI Text Tagger application** ready to deploy on Vercel.
 
 ## ⚡ Quick Links
 

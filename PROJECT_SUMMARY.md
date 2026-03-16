@@ -1,6 +1,6 @@
 # AI Text Tagger - Project Summary
 
-Your complete, production-ready AI Text Tagger application for v0.app/Vercel deployment.
+Your complete, production-ready AI Text Tagger application for Vercel deployment.
 
 ## 📋 Project Overview
 
@@ -286,6 +286,6 @@ Everything is set up and ready to deploy:
 
 ---
 
-**The project is complete, tested, and ready for production deployment on Vercel/v0.app! 🎊**
+**The project is complete, tested, and ready for production deployment on Vercel! 🎊**
 
 For questions, refer to the documentation files above or check the code comments.

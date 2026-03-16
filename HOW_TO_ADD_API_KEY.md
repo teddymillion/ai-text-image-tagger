@@ -1,11 +1,11 @@
-# How to Add Your Google Gemini API Key to v0.app
+# How to Add Your Google Gemini API Key to vercel
 
-Your app is ready to use, but you need to add your API key through v0.app's environment variable settings. Follow these steps:
+Your app is ready to use, but you need to add your API key through vercel's environment variable settings. Follow these steps:
 
 ## Step-by-Step Guide
 
 ### Step 1: Open the Variables Panel
-1. In the v0.app chat sidebar (left side), look for the **"Vars"** tab
+1. In the vercel chat sidebar (left side), look for the **"Vars"** tab
 2. Click on it to open the environment variables manager
 
 ### Step 2: Add the API Key
@@ -21,7 +21,7 @@ Your app is ready to use, but you need to add your API key through v0.app's envi
 ## Visual Guide
 
 ```
-v0.app Interface:
+vercel Interface:
 ┌─────────────────────────────────────────┐
 │  Chat  │ Design │ Rules │ Vars │ Settgs │  <- Click "Vars"
 │──────────────────────────────────────────│

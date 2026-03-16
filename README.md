@@ -19,7 +19,7 @@ A modern, production-ready web application that uses **Google Gemini 1.5 Flash**
 - **Frontend**: React 19, TypeScript, Tailwind CSS, shadcn/ui
 - **Backend**: Next.js 16 with App Router
 - **AI**: Vercel AI SDK v6, Google Gemini 1.5 Flash
-- **Hosting**: Vercel or v0.app
+- **Hosting**: Vercel 
 
 ## Project Structure
 

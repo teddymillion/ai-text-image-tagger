@@ -306,13 +306,7 @@ Show Error Message
 
 ## Monitoring & Logging
 
-### Frontend Logging
-Currently minimal. To add:
-```typescript
-console.log("[v0] Sending request:", { text })
-console.log("[v0] Response received:", data)
-console.log("[v0] Error occurred:", error)
-```
+
 
 ### Backend Logging
 ```typescript

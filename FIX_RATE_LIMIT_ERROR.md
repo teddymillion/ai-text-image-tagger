@@ -9,7 +9,7 @@ The preview is serving cached code from before the migration to Google Generativ
 ## Solution: Hard Refresh the Preview (30 seconds)
 
 ### Step 1: Hard Refresh the Browser
-In the v0.app Preview window, do a **hard refresh**:
+In the Preview window, do a **hard refresh**:
 
 - **Mac:** Press `Cmd + Shift + R` 
 - **Windows/Linux:** Press `Ctrl + Shift + R`
@@ -57,7 +57,7 @@ pnpm dev
 
 **Option 2: Verify Environment Variable**
 Make sure `GOOGLE_GENERATIVE_AI_API_KEY` is set in the Vars section:
-1. Click the left sidebar in v0.app
+1. Click the left sidebar
 2. Go to "Vars"
 3. Confirm `GOOGLE_GENERATIVE_AI_API_KEY` is listed
 4. Hard refresh browser again

@@ -125,13 +125,6 @@ vercel
    - `GOOGLE_GENERATIVE_AI_API_KEY` = your API key
 7. Click **Deploy**
 
-### Option C: Using v0.app Deploy
-
-1. Click the **Publish** button in v0.app
-2. Follow the authentication flow
-3. Add environment variables when prompted
-4. Your app will be live!
-
 ## Gemini Free Tier Limits
 
 | Feature | Limit |
@@ -271,7 +264,7 @@ Response:
 ## Support
 
 - **Google Gemini Docs:** https://ai.google.dev/
-- **v0.app Help:** https://vercel.com/help
+- **Help:** https://vercel.com/help
 - **Common Issues:** See troubleshooting section above
 
 ---

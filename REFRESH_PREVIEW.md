@@ -16,7 +16,7 @@ The preview is showing old cached code that tries to use OpenAI's AI Gateway. Th
    - Select "Empty cache and hard refresh"
 
 ### Option 2: Restart the Dev Server
-1. In the v0 console, stop the dev server (Ctrl+C)
+1. In the console, stop the dev server (Ctrl+C)
 2. Wait 2 seconds
 3. Start it again: `pnpm dev`
 
@@ -82,7 +82,7 @@ The API key should be set in your environment variables.
 ## Technical Details
 
 ### Why This Happens
-- v0 caches code in the browser
+- caches code in the browser
 - When we update server-side code, the cache might not clear immediately
 - A hard refresh forces the browser to fetch fresh code from the server
 

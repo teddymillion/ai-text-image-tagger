@@ -1,13 +1,13 @@
 # Deploy AI Text Tagger with Google Gemini
 
-Complete step-by-step guide to deploy your app with Gemini to Vercel or v0.app.
+Complete step-by-step guide to deploy your app with Gemini to Vercel.
 
 ## Pre-Deployment Checklist (5 minutes)
 
 - [ ] Have Google Gemini API key ready
 - [ ] Node.js 18+ installed
 - [ ] GitHub account (for Vercel deployment)
-- [ ] Vercel account (optional, or use v0.app)
+- [ ] Vercel account (optional)
 
 ## Option 1: Deploy to Vercel (Recommended)
 
@@ -96,19 +96,7 @@ If it fails:
 - Verify environment variable is set
 - Make sure API key is valid
 
-## Option 2: Deploy on v0.app (Easiest)
-
-If you're using v0.app:
-
-1. Click **"Publish"** button (top right)
-2. Sign in with your account
-3. Follow the authentication flow
-4. When prompted for environment variables:
-   - Add `GOOGLE_GENERATIVE_AI_API_KEY`
-   - Paste your key
-5. Click **"Deploy"**
-
-Your app will be live on v0.app automatically!
+Your app will be live on Vercel automatically!
 
 ## Option 3: Deploy to Other Platforms
 
@@ -317,7 +305,6 @@ For text tagging at scale: ~$0.15 per 1000 requests
 - **Google Gemini Docs:** https://ai.google.dev/
 - **Vercel Docs:** https://vercel.com/docs
 - **Next.js Docs:** https://nextjs.org/docs
-- **v0.app Help:** https://vercel.com/help
 
 ## Success Checklist
 

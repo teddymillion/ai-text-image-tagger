@@ -125,14 +125,6 @@ Go to **Network** tab, generate tags again
    - [ ] Generate tags works
    - [ ] Response time similar to local (~2-3 seconds)
 
-### If deploying to v0.app:
-
-1. Click **Publish** button
-2. Add `GOOGLE_GENERATIVE_AI_API_KEY` environment variable
-3. Wait for deployment
-   - [ ] Deployment completes
-   - [ ] URL provided
-
 4. Test deployed version
    - [ ] Visit provided URL
    - [ ] App loads correctly
@@ -319,7 +311,7 @@ All of these should be checked:
 - [ ] Footer shows "Google Gemini 1.5 Flash"
 
 ### Deployment (if applicable)
-- [ ] Environment variable set in Vercel/v0.app
+- [ ] Environment variable set in Vercel
 - [ ] Deployed app accessible
 - [ ] Deployed app works like local version
 - [ ] Response time similar to local

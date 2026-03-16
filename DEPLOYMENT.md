@@ -245,15 +245,6 @@ git push origin main
 - **AI SDK Documentation**: https://sdk.vercel.ai
 - **OpenAI API Docs**: https://platform.openai.com/docs/api-reference
 
-## Cost Estimation
-
-With v0.app/Vercel deployment:
-- **Hosting**: Free tier available, scales as needed
-- **OpenAI API**: ~$0.0003 per request (gpt-4o-mini)
-- **Custom Domain**: ~$10-15/year with domain registrar
-
-For 1000 requests per month: ~$0.30 in API costs
-
 ## Next Steps
 
 1. ✅ Deploy to Vercel

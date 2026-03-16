@@ -79,12 +79,8 @@ When you're ready to go live:
 
 Option 1: Deploy to Vercel (Recommended)
   $ vercel
-  
-Option 2: Deploy to v0.app
-  Click the "Publish" button in v0
-  The environment variable is already configured
 
-Option 3: Deploy to your own server
+Option 2: Deploy to your own server
   Set environment variable: GOOGLE_GENERATIVE_AI_API_KEY
   Then deploy as normal
 

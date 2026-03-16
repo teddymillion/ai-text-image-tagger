@@ -85,11 +85,6 @@ vercel
 4. Add environment variable: `GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyBuWSDy60igNVMit5KUyIZdYtK6HxLWkNs`
 5. Deploy!
 
-### Option 3: v0.app Publish
-1. Click the "Publish" button in the top right
-2. Add environment variable to v0.app
-3. Deploy instantly
-
 ## Important Notes
 
 ✅ **No credit card required** - Gemini 1.5 Flash is completely free  

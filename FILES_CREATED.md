@@ -245,7 +245,7 @@ Status: ✅ COMPLETE
 ## 📂 Directory Structure
 
 ```
-v0-project/
+project/
 │
 ├── app/
 │   ├── api/

@@ -72,14 +72,6 @@ vercel
 # 5. Deploy
 ```
 
-### v0.app Deployment (1 minute)
-
-```
-1. Click "Publish" button
-2. Add GOOGLE_GENERATIVE_AI_API_KEY when prompted
-3. Done! Your app is live
-```
-
 ## Key Files
 
 Read these in order based on what you need:
@@ -87,7 +79,7 @@ Read these in order based on what you need:
 | Document | Purpose | Time |
 |----------|---------|------|
 | **GEMINI_SETUP.md** | Complete Gemini setup guide | 15 min |
-| **DEPLOY_GEMINI.md** | How to deploy (Vercel/v0.app) | 10 min |
+| **DEPLOY_GEMINI.md** | How to deploy (Vercel) | 10 min |
 | **MIGRATION_TO_GEMINI.md** | What changed from OpenAI | 10 min |
 
 ## API Reference
@@ -285,7 +277,7 @@ That's it! The AI SDK handles the rest.
 1. **Get API Key:** https://aistudio.google.com/apikey (2 min)
 2. **Setup Locally:** Add key to `.env.local` (1 min)
 3. **Test:** Run `pnpm dev` and verify (2 min)
-4. **Deploy:** Use Vercel or v0.app (5 min)
+4. **Deploy:** Use Vercel (5 min)
 5. **Share:** Get your live URL!
 
 **Total: ~15 minutes from start to deployed app**

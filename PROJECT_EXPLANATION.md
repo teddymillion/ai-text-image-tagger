@@ -326,7 +326,7 @@ Return a JSON object with exactly this format (no markdown code blocks):
 
 ### Project Tree
 ```
-/vercel/share/v0-project/
+/vercel/share/project/
 ├── app/
 │   ├── page.tsx                 # Root page (renders TextTagger)
 │   ├── layout.tsx               # Root layout (HTML structure, fonts)
@@ -601,7 +601,7 @@ const parsed = JSON.parse(jsonMatch[0])
 
 ### Deployment Security
 
-**For Vercel/v0.app:**
+**For Vercel**
 1. Add API key to environment variables (Vercel Settings)
 2. Key is injected at runtime, never in source code
 3. Key not visible in GitHub repository

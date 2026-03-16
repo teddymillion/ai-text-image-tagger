@@ -38,9 +38,6 @@ Option A - Vercel (recommended):
   vercel
   (Follow prompts, add env var when asked)
 
-Option B - v0.app:
-  Click "Publish" → Add env var → Done
-
 API REFERENCE
 ─────────────
 Endpoint: POST /api/tag-text
@@ -150,7 +147,7 @@ NEXT STEPS
 1. Get API key: https://aistudio.google.com/apikey
 2. Add to .env.local
 3. Run: pnpm dev
-4. Deploy: vercel or v0.app publish
+4. Deploy: vercel
 5. Share your URL!
 
 STATUS: ✅ READY FOR PRODUCTION

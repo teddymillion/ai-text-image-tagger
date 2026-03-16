@@ -54,10 +54,6 @@ Option B - Git Deploy:
 4. Add env var: GOOGLE_GENERATIVE_AI_API_KEY
 5. Deploy!
 
-Option C - v0.app Deploy:
-1. Click "Publish" button
-2. Add env var to v0.app
-3. Done!
 
 ================================================================================
   FEATURES
@@ -96,7 +92,7 @@ Your API key is configured in .env.local:
 
 GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyBuWSDy60igNVMit5KUyIZdYtK6HxLWkNs
 
-This file is used for local development. When deploying to Vercel/v0.app,
+This file is used for local development. When deploying to Vercel,
 add the same variable to the platform's environment settings.
 
 ================================================================================
@@ -167,7 +163,7 @@ Error responses (400, 401, 429, 500):
 2. Run: pnpm dev
 3. Visit: http://localhost:3000
 4. Test: Paste text, click "Generate Tags"
-5. Deploy: vercel or v0.app Publish
+5. Deploy: vercel
 
 That's it! Your AI Text Tagger is ready to use! 🎉
 

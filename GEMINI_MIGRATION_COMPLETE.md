@@ -35,7 +35,7 @@ All other files remain identical. Your existing:
 |------|---------|-----------|
 | **GEMINI_SUMMARY.md** | Overview + quick start (START HERE) | 5 min |
 | **GEMINI_SETUP.md** | Complete setup guide | 15 min |
-| **DEPLOY_GEMINI.md** | Deployment to Vercel/v0.app | 10 min |
+| **DEPLOY_GEMINI.md** | Deployment to Vercel | 10 min |
 | **VERIFY_GEMINI.md** | Testing & verification checklist | 10 min |
 
 ### Reference Guides
@@ -74,12 +74,6 @@ pnpm dev
 vercel
 # Follow prompts, add env var
 ```
-
-**Option B: v0.app**
-```
-Click "Publish" → Add env var → Done
-```
-
 ## 💰 Cost Breakdown
 
 | Metric | Before | After |
@@ -143,13 +137,6 @@ Dashboard → Environment Variables → Add
 Name: GOOGLE_GENERATIVE_AI_API_KEY
 Value: AIzaSy...your_key...
 ```
-
-### v0.app Deployment
-
-```
-Click Publish → Add environment variable when prompted
-```
-
 ## 🎯 Key Features
 
 ✅ **Free Forever** - No credit card required  
@@ -246,7 +233,7 @@ Choose your path:
 
 ### After Deployment (5 more minutes)
 
-✅ Live app on Vercel or v0.app  
+✅ Live app on Vercel  
 ✅ Shareable URL  
 ✅ Production-ready  
 ✅ Zero-cost operation  
@@ -322,7 +309,7 @@ Your migration is complete. Next steps:
 1. **Read:** Start with GEMINI_SUMMARY.md (5 min)
 2. **Setup:** Get API key from Google AI Studio (1 min)
 3. **Test:** Run `pnpm dev` locally (2 min)
-4. **Deploy:** Use Vercel or v0.app (5 min)
+4. **Deploy:** Use Vercel(5 min)
 5. **Share:** Get your live URL and celebrate! 🎊
 
 **Total time to live app: ~15 minutes**

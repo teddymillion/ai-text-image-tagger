@@ -50,9 +50,6 @@ pnpm dev
 # Option A: Vercel
 vercel
 
-# Option B: v0.app
-# Click Publish button
-```
 
 ---
 
@@ -80,7 +77,6 @@ vercel
 
 4. **DEPLOY_GEMINI.md** (10 min)
    - Deploy to Vercel
-   - Deploy to v0.app
    - Deploy to other platforms
    - Post-deployment verification
 
@@ -156,7 +152,7 @@ Only the environment variable name changed!
 - ✅ Routing (same routes)
 - ✅ Styling (same CSS)
 - ✅ Build process (same Next.js config)
-- ✅ Deployment (same on Vercel/v0.app)
+- ✅ Deployment (same on Vercel)
 
 ---
 
@@ -304,18 +300,7 @@ vercel
 
 # Done! Your app is live
 ```
-
-### Option 2: v0.app (Easiest)
-
-**Easiest:** ~2 minutes
-
-```
-1. Click "Publish" button
-2. Add GOOGLE_GENERATIVE_AI_API_KEY when prompted
-3. Your app is live!
-```
-
-### Option 3: GitHub + Vercel Dashboard
+### Option 2: GitHub + Vercel Dashboard
 
 **Manual:** ~10 minutes
 
@@ -589,7 +574,7 @@ After deployment, verify:
 ### Short-term (Today)
 
 5. ✅ Test locally (generate 5-10 tags)
-6. ✅ Deploy to Vercel or v0.app
+6. ✅ Deploy to Vercel
 7. ✅ Test deployed version
 8. ✅ Share your URL!
 
@@ -634,13 +619,13 @@ You now have a **completely free, production-ready AI text tagging application**
 1. Check **VERIFY_GEMINI.md** testing checklist
 2. Review error message in **Troubleshooting** section above
 3. Check your API key at https://aistudio.google.com/apikey
-4. Verify environment variables in Vercel/v0.app
+4. Verify environment variables in Vercel
 
 ### For Further Help
 
 - **Google Gemini:** https://ai.google.dev/
 - **Vercel:** https://vercel.com/help
-- **GitHub Issues:** Check v0.app documentation
+- **GitHub Issues:** Check the documentation
 
 ---
 

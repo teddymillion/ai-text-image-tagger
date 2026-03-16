@@ -47,11 +47,6 @@ Visit http://localhost:3000 and test!
 vercel
 ```
 
-**Option B: v0.app**
-- Click "Publish" button
-- Add env var when prompted
-- Done!
-
 ---
 
 ## 📚 Reading Guide
@@ -157,11 +152,6 @@ Name: GOOGLE_GENERATIVE_AI_API_KEY
 Value: AIzaSy...
 ```
 
-### v0.app (When Publishing)
-```
-Add GOOGLE_GENERATIVE_AI_API_KEY when prompted
-```
-
 ---
 
 ## 📊 Usage Limits (Free Tier)
@@ -246,7 +236,7 @@ Your app is complete, tested, and ready to deploy!
 1. ✅ Get API key (1 min): https://aistudio.google.com/apikey
 2. ✅ Setup locally (1 min): Add to `.env.local`
 3. ✅ Test (1 min): `pnpm dev`
-4. ✅ Deploy (2-5 min): `vercel` or v0.app
+4. ✅ Deploy (2-5 min): `vercel`
 
 **Total time: 5-10 minutes to live app! 🚀**
 

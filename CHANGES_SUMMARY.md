@@ -162,7 +162,7 @@ If you need to rollback to OpenAI:
 3. Value: `AIzaSyBuWSDy60igNVMit5KUyIZdYtK6HxLWkNs`
 4. Deploy
 
-### v0.app Deployment
+### Deployment
 1. Click Variables in sidebar
 2. Add: `GOOGLE_GENERATIVE_AI_API_KEY`
 3. Value: `AIzaSyBuWSDy60igNVMit5KUyIZdYtK6HxLWkNs`
@@ -203,7 +203,7 @@ If you need to rollback to OpenAI:
 
 1. ✅ Install: `pnpm install`
 2. ✅ Test: `pnpm dev`
-3. ✅ Deploy: `vercel` or v0.app Publish
+3. ✅ Deploy: `vercel`
 4. ✅ Share: Your live app is ready!
 
 ---

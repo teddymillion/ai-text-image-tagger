@@ -8,7 +8,7 @@ The NEW code (Google Gemini) is already saved to disk.
 QUICK FIX (Takes 30 seconds):
 ================================================================================
 
-1. Look at the Preview window on the right side of v0.app
+1. Look at the Preview window on the right side.
 
 2. Inside the Preview, press ONE of these:
    - Mac:     Command + Shift + R
@@ -54,13 +54,7 @@ IF IT STILL DOESN'T WORK:
 
 Option 1: Try refreshing again (sometimes takes 2 attempts)
 
-Option 2: Check environment variable
-  - Look at the left sidebar in v0.app
-  - Click "Vars"
-  - Make sure "GOOGLE_GENERATIVE_AI_API_KEY" is there
-  - Then hard refresh again
-
-Option 3: Check browser console for errors
+Option 2: Check browser console for errors
   - Press F12 to open Developer Tools
   - Click "Console" tab
   - Share any red error messages

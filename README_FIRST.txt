@@ -3,7 +3,7 @@
 ================================================================================
 
 CONGRATULATIONS! You have a complete, production-ready AI Text Tagger 
-application ready to deploy on v0.app/Vercel.
+application ready to deploy on Vercel.
 
 ================================================================================
                            ⚡ FASTEST PATH TO LIVE ⚡
@@ -178,7 +178,7 @@ Performance:
                        📂 PROJECT STRUCTURE
 ================================================================================
 
-v0-project/
+project/
 ├── app/api/tag-text/route.ts      ← API endpoint (82 lines)
 ├── components/text-tagger.tsx     ← UI component (238 lines)
 ├── app/page.tsx                   ← Home page (14 lines)
