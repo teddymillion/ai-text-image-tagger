@@ -27,39 +27,43 @@ export function TagsDisplay({ tags, confidence, isLoading = false }: TagsDisplay
   }
 
   return (
-    <div className="space-y-4">
-      {/* Confidence Score */}
+    <div className="space-y-5">
       {confidence !== null && (
-        <div className="space-y-2">
-          <div className="flex justify-between items-center text-sm">
-            <span className="text-muted-foreground">Confidence Score</span>
-            <span className="font-semibold">{(confidence * 100).toFixed(0)}%</span>
+        <div className="space-y-3">
+          <div className="flex justify-between text-xs uppercase tracking-wide text-muted-foreground">
+            <span>Confidence</span>
+            <span className="font-semibold text-foreground">{(confidence * 100).toFixed(0)}%</span>
           </div>
-          <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+          <div className="h-2 w-full overflow-hidden rounded-full bg-muted/80">
             <div
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 h-full transition-all duration-300"
+              className="h-full rounded-full bg-[linear-gradient(90deg,hsl(221_83%_53%),hsl(199_89%_48%))] transition-all duration-300"
               style={{ width: `${confidence * 100}%` }}
             />
           </div>
         </div>
       )}
 
-      {/* Tags */}
       {tags.length > 0 && (
         <div className="space-y-3">
-          <div className="flex justify-between items-center">
-            <span className="text-sm font-medium text-muted-foreground">Generated Tags</span>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Generated Tags
+            </span>
             <button
               onClick={handleCopyTags}
-              className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+              className="inline-flex items-center gap-1 rounded-full border border-border/60 bg-background px-3 py-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-              {copied ? 'Copied!' : 'Copy'}
+              {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
+              {copied ? 'Copied' : 'Copy'}
             </button>
           </div>
           <div className="flex flex-wrap gap-2">
             {tags.map((tag, idx) => (
-              <Badge key={idx} variant="secondary" className="px-3 py-1.5">
+              <Badge
+                key={idx}
+                variant="secondary"
+                className="rounded-full border border-border/60 bg-background/70 px-3 py-1.5 text-xs font-medium"
+              >
                 {tag}
               </Badge>
             ))}
@@ -67,10 +71,9 @@ export function TagsDisplay({ tags, confidence, isLoading = false }: TagsDisplay
         </div>
       )}
 
-      {/* Loading State */}
       {isLoading && (
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+          <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
           Analyzing...
         </div>
       )}
